@@ -1,0 +1,195 @@
+:root{
+  --page-w:1118px;
+  --page-h:931px;
+  --bg-resume:#121212;
+  --panel:#2f3437;
+  --muted: #bfbfbf;
+  --text: #ffffff;
+  --accent:#f6b036;
+  font-family:"Helvetica Neue", Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  color:var(--text);
+}
+
+/* Контейнер сторінки */
+.page-wrap{
+  width:var(--page-w);
+  height:var(--page-h);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Основна структура резюме */
+.resume{
+  width:1000px;
+  height:800px;
+  background:linear-gradient(180deg,#1b1b1c,#161616);
+  border-radius:20px;
+  padding:28px;
+  box-shadow:0 6px 0 rgba(0,0,0,0.2);
+  display:grid;
+  grid-template-columns:260px 1fr 320px;
+  grid-gap:28px;
+}
+
+/* Ліва колонка */
+.left-col{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+/* Картка з аватаром */
+.card-avatar{
+  background:var(--panel);
+  padding:22px;
+  border-radius:16px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:12px;
+  width:100%;
+}
+.avatar{
+  width:86px;
+  height:86px;
+  border-radius:14px;
+  object-fit:cover;
+  display:block;
+}
+.name{
+  font-size:20px;
+  font-weight:700;
+}
+.title{
+  color:var(--accent);
+  font-size:13px;
+}
+
+/* Контактна інформація */
+.contact{
+  margin-top:6px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.45;
+}
+.contact .phone{margin-top:6px;color:var(--text)}
+.contact .email{color:var(--text);}
+
+/* Базові секції */
+.block{padding:6px 2px;}
+.block h2,.block h3{margin:0 0 12px 0;font-weight:700}
+.block h2{font-size:20px;color:var(--text)}
+.block h3{font-size:16px;color:var(--text)}
+
+/* Списки лівої колонки */
+.left-col .block ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px 18px;
+}
+.left-col .block ul li{
+  color:#ffffff;
+  font-size:13px;
+}
+
+/* Центральна колонка */
+.center-col{color:var(--text)}
+
+/* --- ПРО МЕНЕ --- */
+.about h2{color:var(--text);}
+.about p{
+  color:var(--text);
+  font-size:13px;
+  line-height:1.45;
+  margin:6px 0 0 0;
+}
+
+/* --- ДОСВІД --- */
+.experience h2{color:var(--text);}
+.experience .job{margin-bottom:18px}
+
+/* Назви посад  */
+.experience h3{
+  font-size:15px;
+  margin:6px 0;
+  color:var(--accent);
+}
+
+/* @Company */
+.company{
+  color:var(--accent);
+  font-weight:700;
+  margin-left:6px;
+  font-size:13px;
+}
+
+/* Дати */
+.dates{
+  color:var(--muted);
+  font-size:12px;
+  margin-bottom:8px;
+}
+
+/* Опис роботи */
+.experience p{
+  color:var(--text);
+  font-size:13px;
+  line-height:1.45;
+  margin:0;
+}
+
+/* Права колонка */
+.right-col{color:var(--text)}
+
+/* --- ОСВІТА --- */
+.education h2{color:var(--text);}
+.education .edu h3{
+  font-size:15px;
+  margin:4px 0;
+  color:var(--accent);
+}
+.right-col .sub{
+  color:var(--muted);
+  font-size:13px;
+  margin-bottom:6px;
+}
+
+/* --- КУРСИ ТА СЕРТИФІКАЦІЇ --- */
+.courses h2{color:var(--text);}
+.courses .course{margin-bottom:12px}
+
+/* Назви курсів */
+.courses h4{
+  color:var(--accent);
+  margin:0 0 4px 0;
+}
+
+/* Деталі під курсами */
+.courses .meta{
+  color:var(--muted);
+  font-size:12px;
+  margin-bottom:4px;
+}
+
+/* Опис курсів */
+.courses p{
+  color:var(--text);
+  margin:0;
+  font-size:13px;
+  line-height:1.45;
+}
