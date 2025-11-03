@@ -86,7 +86,9 @@ body{
 }
 .contact .phone{margin-top:6px;color:var(--text)}
 .contact .email{color:var(--text);}
-
+.email{
+    color: white;
+}
 /* Базові секції */
 .block{padding:6px 2px;}
 .block h2,.block h3{margin:0 0 12px 0;font-weight:700}
